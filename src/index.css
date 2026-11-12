@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "./App.css";
+
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #f3eadc;
+  background: #211b17;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --ink: #f3eadc;
+  --muted: #c1b09c;
+  --muted-dim: #94816d;
+  --espresso: #211b17;
+  --glass: rgba(57, 44, 32, 0.72);
+  --glass-light: rgba(239, 215, 181, 0.1);
+  --line: rgba(237, 211, 170, 0.19);
+  --gold: #d7a24f;
+  --gold-light: #f1c778;
+  --copper: #b96e2f;
+  --danger: #e58b71;
+  --shadow: 0 28px 80px rgba(9, 7, 5, 0.42);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--espresso);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 18% 20%, rgba(201, 140, 81, 0.38), transparent 34%),
+    radial-gradient(ellipse at 83% 15%, rgba(116, 77, 47, 0.44), transparent 36%),
+    radial-gradient(ellipse at 68% 88%, rgba(119, 71, 37, 0.42), transparent 38%),
+    linear-gradient(130deg, #211915 0%, #59432f 48%, #251d18 100%);
+  background-attachment: fixed;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  color: #211b17;
+  background: var(--gold-light);
+}
+
+#root {
+  min-height: 100vh;
+}
